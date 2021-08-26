@@ -9,33 +9,40 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
+    <!--creamos un navbar-->
     <nav class="navbar navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Ejercicio 1</a>
         </div>
     </nav>
+    <!--creamos un cointainer-->
     <div class="container mt-3">
-        
+        <!--creamos row para ordenar mejor la pàgina-->
         <div class="row">
 
             <div class="col-8">
 
                 <div class="mb-3">
+                    <!--creamos un label cociente-->
                     <label class="form-label">C.O</label>
+                    <!--creamos el input para ingresar cociente-->
                     <input id="inp_dato1" class="form-control btn-primary" type="text" placeholder="ingrese cateto opuesto">
                 </div>
 
                 <div class="mb-3">
+                    <!--creamos un label cateto-->
                     <label class="form-label">C.A</label>
+                    <!--creamos un input para ingresar cateto-->
                     <input id="inp_dato2" class="form-control btn-primary" type="text" placeholder="ingrese cateto adyacente">
         
                 </div>
-
+                    <!--creamos un botonn para calcular la dormula-->
                 <button id="btn_calcular" class="btn btn-danger">Aceptar</button>
 
             </div>
             
             <div class="col-4">
+                <!--mostramos el resultado en texto-->
                 <h3 id="h_resultado"></h3>
             </div>
 

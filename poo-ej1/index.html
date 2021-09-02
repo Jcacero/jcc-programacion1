@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO EJ1</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bhaskara</a>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        
+        <div class="row">
+
+            <div class="col-4">
+                <div class="mb-3">
+                    <label class="form-label">coef A</label>
+                    <input id="inp_a" class="form-control" type="number" placeholder="ingrese coeficiente A">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">coef B</label>
+                    <input id="inp_b" class="form-control" type="number" placeholder="ingrese coeficiente B">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">TI C</label>
+                    <input id="inp_c" class="form-control" type="number" placeholder="ingrese término independiente C">
+                </div>
+
+                <button id="btn_calcular" class="btn btn-success">Calcular</button>
+
+            </div>
+
+
+            <div class="col-8">
+                <h3 id="h3_r1"></h3>
+                <h3 id="h3_r2"></h3>         
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>

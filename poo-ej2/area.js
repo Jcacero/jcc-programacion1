@@ -21,7 +21,7 @@ export default class Area{
     }
 
     calcularAreaTriangulo(){
-        const resultado2 = parseInt(this.baseTR) * parseInt(this.alturaTR);
+        const resultado2 = (parseInt(this.baseTR) * parseInt(this.alturaTR)) /2;
         return resultado2.toFixed(2);
 
     }

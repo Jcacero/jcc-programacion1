@@ -60,7 +60,7 @@ const listar_clientes = async() => {
                 <td>${element.apellido}</td>
                 <td>${element.dni}</td>
                 <td>
-                    <button onclick="eliminar('${element.id}')" class= "btn btn-danger btn-sm">X</button>
+                    <button onclick="eliminar('${element.id}')" class= "btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
                 </td>            
             </tr>
         `

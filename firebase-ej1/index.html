@@ -9,25 +9,59 @@
 </head>
 <body>
     
-    <div class="container">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Firebase</a>
+        </div>
+    </nav>
 
-        <div class="mb-3">
-            <label class="form-label">Nombre</label>
-            <input id="inp_nom" placeholder="ingrese nombre" type="text" class="form-control">
+
+
+    <div class="container mt-3">
+
+        <div class="row">
+
+            <div class="col-4">
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input id="inp_nom" placeholder="ingrese nombre" type="text" class="form-control">
+                </div>
+            
+                <div class="mb-3">
+                    <label class="form-label">Apellido</label>
+                    <input id="inp_ape" placeholder="ingrese apellido" type="text" class="form-control">
+                </div>
+            
+                <div class="mb-3">
+                    <label class="form-label">DNI</label>
+                    <input id="inp_dni" placeholder="ingrese DNI" type="number" class="form-control">
+                </div>
+
+                <button id="btn_obtener" class="btn btn-success">Guardar</button>                   
+
+            </div>
+            <div class="col-8">
+
+                <table class="table">
+                    <thead>
+                        <tr class="table-dark">
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>DNI</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+
+
+            </div>
         </div>
-    
-        <div class="mb-3">
-            <label class="form-label">Apellido</label>
-            <input id="inp_ape" placeholder="ingrese apellido" type="text" class="form-control">
-        </div>
-    
-        <div class="mb-3">
-            <label class="form-label">DNI</label>
-            <input id="inp_dni" placeholder="ingrese DNI" type="number" class="form-control">
-        </div>
-    
-    
-        <button id="btn_obtener" class="btn btn-danger">Obtener datos</button>
+
+
     
     </div>
 

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -39,7 +40,10 @@
                     <input id="inp_dni" placeholder="ingrese DNI" type="number" class="form-control">
                 </div>
 
-                <button id="btn_obtener" class="btn btn-success">Guardar</button>                   
+                <input id="inp_id" type="hidden">
+
+                <button id="btn_obtener" class="btn btn-success">Guardar</button>   
+                <button onclick="actualizar_cliente()" class="btn btn-info"><i class="fa fa-refresh"></i></button>                
 
             </div>
             <div class="col-8">
@@ -56,12 +60,28 @@
                     <tbody id="tbody">
 
                     </tbody>
-                </table>
-
-
+                </table>            
             </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Eliminacion cliente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Esta seguro de ejecutar esta accion?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button onclick="eliminar()" type="button" class="btn btn-danger" data-bs-dismiss="modal" >Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     
     </div>
